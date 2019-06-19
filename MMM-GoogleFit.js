@@ -18,6 +18,7 @@ Module.register("MMM-GoogleFit", {
     stepCountLabel: false,
     useIcons: true,
     displayWeight: true,
+    WhoName: "",
     colors: [
       "#EEEEEE",
       "#1E88E5",
@@ -45,7 +46,7 @@ Module.register("MMM-GoogleFit", {
     wrapper.className = "dimmed small";
 
     var title =  document.createElement("header");
-    title.innerHTML = "Google Fit";
+    title.innerHTML = "Google Fit : " + this.config.whoname;
     wrapper.appendChild(title);
 
     if (this.stats) {
